@@ -10,7 +10,7 @@ body{
   align-items: stretch;
   background-color: #f1f1f1;
   flex-direction: column;
-  min-height: 100vh
+  /* min-height: 100vh */
   
 }
 
@@ -19,7 +19,7 @@ body{
   color: white;
   margin: 10px;
   text-align: center;
-  line-height: 75px;
+  /* line-height: 75px; */
   font-size: 30px;
 }
 #button{
@@ -55,9 +55,14 @@ body{
   img{
     width: 100%;
   }
-  figcaption{
-    margin:1px;
-  }
-  figure{
-    margin: 2px
+  
+  #fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Add this to ensure it spans the full width and stuff */
+    width: 100%; 
+    text-align: center; 
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
   }
